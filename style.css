@@ -131,6 +131,9 @@ main {
     padding: 1rem; 
     color: var(--text-secondary);
 }
+.aside2 {
+    margin-bottom: 5rem;
+}
 
 .headermain h1 {
     padding-bottom: 3rem;
@@ -196,10 +199,7 @@ p {
          margin: 0;
      }
 
-     .logo {
-         display: none;
-     }
-     .logo svg {
+     .nav-item.wrapper {
         display: none;
     }
 
@@ -233,6 +233,9 @@ p {
     }
     .navbar:hover .link-text {
         display: block;
+    }
+    .aside2 {
+        margin-bottom: 0;
     }
     
 }
