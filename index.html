@@ -7,17 +7,20 @@
   <title>Goon</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+  <!--Font: Coda Caption-->
+  <link href="https://fonts.googleapis.com/css2?family=Coda+Caption:wght@800&display=swap" rel="stylesheet">
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-
+<!--nav-bar svg not working. Maybe original link changed values-->
+<!--svg not working for older portfolio version or original github upload-->
+<!--FIXED ISSUE ||| Google did some changes to SVG's default properties in CSS. Had to give min and max heights to some of the SVG's. Made me go crazy trying to figure out what was wrong since I handnt changed any code on my end.-->
     <header>
         <nav class="navbar">
             <ul class="navbar-nav">
                 <li class="nav-item wrapper">
-                    <a href="#" class ="logo"> 
+                    <a href="#" class ="logo" aria-label="arrow"> 
                         <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="caret-square-right" class="svg-inline--fa fa-caret-square-right fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                         <path fill="currentColor" d="M176 354.9V157.1c0-10.7 13-16.1 20.5-8.5l98.3 98.9c4.7 4.7 4.7 12.2 0 16.9l-98.3 98.9c-7.5 7.7-20.5 2.3-20.5-8.4zM448 80v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h352c26.5 0 48 21.5 48 48zm-48 346V86c0-3.3-2.7-6-6-6H54c-3.3 0-6 2.7-6 6v340c0 3.3 2.7 6 6 6h340c3.3 0 6-2.7 6-6z">
                         </path>
@@ -52,13 +55,19 @@
 
         <div class="wrapper">
             <div class="headermain">
-                <img src="./images/IMG_1442.jpg" class="main-image" alt="Money raining on me">
-                <h1><a style="color: #000000;">Hey, I'm </a><a style="color: #fa3729;">HARGUN</a></h1>
-                <p>But around here I go by <a style="color: #4e6eff;">GOON</a>. I am a student attending Bloc enrolled in the Full Stack Web Development Program. I originated in Seattle but my current position is Tri-Cities Washington. I have been thouroghly enjoying myself learning and growing my personal web dev aresnal. I still have much to learn but I look forward to the challenges that come my way ;)</p>
+                <article>
+                    <img src="./images/IMG_1442.jpg" class="main-image" alt="Money raining on me">
+                    <!--hard coded colors because of specific style-->
+                    <h1><a style="color: #ffffff;">Hey, I'm </a><a style="color: #eecb59;">HARGUN</a></h1>
+                    <hr></hr>
+                        <section>
+                        <p>But around here I go by <a style="color: #eecb59;">GOON</a>. I am a student attending Bloc enrolled in the Full Stack Web Development Program. I originated in Seattle but my current position is Tri-Cities Washington. I have been thouroghly enjoying myself learning and growing my personal web dev arsenal. I still have much to learn but I look forward to the challenges that come my way ;)</p>
+                        </section>
+                </article>
             </div>
             <aside class="aside aside1">
                 <h2>Portfolio</h2>
-                <ul class="projects-scroll">
+                <ol class="projects-scroll">
                     <li class="aproject">
                         <a href="#" class ="project-link">
                         <span class="project-text">Quizz App</span>
@@ -79,14 +88,17 @@
                         <span class="project-text">Team Project App</span>
                         </a>
                     </li>
-                </ul>
+                </ol>
             </aside>
+            <!--about me section looks weird when shortening the horizontal view, change in the future to look better-->
             <div class="intromain">
                 <h2>About Me</h2>
-                <p>I'm a nerd with a lot of hobbies. I build pc's for fun. My current PC has been updated 3 times in it's current lifestyle to maintain peak performance while coding. Oh yeah, did I mention I'm a gamer? 2.7 KDA across all Call Of Duty® titles. I also use my computer for audio production, 3D modelling, virtual reality, streaming and video editing.</p>
+                <p>I'm a nerd with a lot of hobbies. I build pc's for fun. My current PC has been updated 3 times in it's current lifestyle to maintain peak performance while coding. 
+                    Oh yeah, did I mention I'm a gamer? 2.7 KDA across all Call Of Duty® titles. I also use my computer for audio production, 3D modelling, virtual reality, streaming and video editing.
+                </p>
             </div>
             <div class="contact-me">
-                <h1>Reach Me</h1> 
+                <h3>Reach Me</h3> 
                 <form action="#" method="POST">
                     <label for="user-name">Name:</label>
                     <input id="user-name" type="text" name="name">
@@ -108,15 +120,20 @@
                         </a>
                     </li>
                     <li class="contact">
-                        <a href="https://github.com/loonigooni" class ="contact-link">
+                        <a href="https://github.com/loonigooni" class ="contact-link" target="_blank">
                         <span class="contact-text">GitHub</span>
+                        </a>
+                    </li>
+                    <li class="contact">
+                        <a href="https://www.linkedin.com/in/hargun-singh-914805205" class ="contact-link" target="_blank">
+                        <span class="contact-text">Linkedin</span>
                         </a>
                     </li>
                 </ul>
                 <h2>Email</h2>
                 <ul class="contact-list">
                     <li class="contact">
-                        <a href=" " class ="contact-link">
+                        <a href="mailto:goonsinghpro@gmail.com" class ="contact-link">
                         <span class="contact-text">goonsinghpro@gmail.com</span>
                         </a>
                     </li>
@@ -124,8 +141,11 @@
             </aside>
         </div>
 
-    </main>
 
+    </main>
+    <footer>
+        <p>Goon©</p>
+    </footer>
 </body>
 
 </html>
