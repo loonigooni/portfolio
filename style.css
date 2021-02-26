@@ -3,6 +3,7 @@ body {
   background: #272727;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+/*all text is currently white due to contract errors*/
 main {
   color: #ffffff
 }
@@ -18,8 +19,10 @@ main {
 }
 
 header {
+  background-color: rgb(32, 32, 32);
   margin: auto;
 }
+/* Removed animated nav due to media query issues*/
 header nav {
   display: flex;
   flex-direction: row;
@@ -79,9 +82,8 @@ section ul li a {
   margin: 10px;
 }
 
-footer 
 
-/*Contact Form*/ 
+/*Contact Form Adjustments*/ 
 
 form label {
   display: block;
@@ -98,10 +100,11 @@ form textarea {
 
 footer {
   text-align: center;
-  color:#ffffff
+  color:#ffffff;
+  background-color: rgb(32, 32, 32);
 }
 
-/*Media Query*/
+/*Media Query for Desktop*/
 
 @media all and (min-width: 800px) {
   header {
