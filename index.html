@@ -1,154 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
-<head>
-  <meta charset="utf-8">
-  <title>Goon</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Coda+Caption:wght@800&display=swap" rel="stylesheet">
-  <link href="style.css" rel="stylesheet" type="text/css" />
-</head>
+  <head>
+    <meta charset="utf-8">
+    <title>G O O N</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
 
-<body>
-<!--Simplified Navbar-->
-    <header id="home">
-        <div class="logo"><a href="#home">Goon</a></div>
-        <nav class="navbar">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a href="#about">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#portfolio">Portfolio</a>
-                </li>   
-                <li class="nav-item">
-                    <a href="#contact">Contact</a>
-                </li> 
-            </ul>
-        </nav>
+  <body>
+
+    <header>
+      <div class="logo">Goon</div>
+      <nav>
+        <ul id="menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </header>
-    <hr>
-    <main>
-
-        <section class="intro" id="about">
-            <div class="group">
-                <div class="item">
-                    <h1>Hey, I'm <a style="color: #ffffff;">HARGUN</a></h1>
-                    <img src="./images/IMG_1442.jpg" class="main-image" alt="Money raining on me">
-                    <p>But around here I go by <a style="color: #ffffff;">GOON</a>.</p> 
-                    <p>I am a student attending Bloc, enrolled in the Full Stack Web Development Program. 
-                    I originated in Seattle but my current position is Tri-Cities Washington. I have been 
-                    thoroughly enjoying myself learning and growing my personal web dev arsenal. I still 
-                    have much to learn but I look forward to the challenges that come my way.</p>
-                </div>
-                <div class="item item-double">
-                    <h1>About Me</h1>
-                    <p>
-                        My interest in coding started in highschool when I enrolled into a game design class.
-                        I enjoyed the class very much and decided to try cyber security and design as well. So far
-                        web develeopment encapsulates a lot of elements from all the courses and tests me creativaly
-                        and technically. 
-                    </p>
-                    <p>
-                        Outside of career pursuing I have a lot of nerdy hobbies. I built my first computer in
-                        2013 and since have built dozens of systems since then for myself as well as family
-                        and friends. I use my current PC for various things such as audio production, 3D modelling, 
-                        virtual reality, as well as gaming, streaming, and video editing. When I'm done being
-                        a total geek I also like to work on my car and cook :)
-                    </p>
-                </div>
-            </div>
-        </section>
-        <hr>
-        <section class="projects" id="portfolio">
-        <!--h2 outside of both divs due to misallignment-->
-            <h2 class="portfolio-text">Portfolio</h2>
-            <div class="group">
-                <div class="item">
-                    <h3>Pokedex App</h3>
-                    <div class="project-links">
-                        <a href="https://loonigooni.github.io/goons-pokedex/" class ="project-link" target="_blank">Working App</a> <a href="https://github.com/loonigooni/goons-pokedex" class ="project-link" target="_blank">Github Repo</a>
-                    </div>
-                    <p>
-                        Pokedex app that requests data using the PokeAPI. You can input a name of any pokemon and it will display the stats and details as well as
-                        a cute sprite of the Pokemon. This project helped refine my HTML, CSS, and JS skills.
-                        Also my first project using a public API.
-                    </p>
-                </div>
-                <div class="item">
-                    <h3>Quiz App</h3>
-                    <div class="project-links">
-                        <a href="https://loonigooni.github.io/quiz-app/" class ="project-link" target="_blank">Working App</a> <a href="https://github.com/loonigooni/quiz-app" class ="project-link" target="_blank">Github Repo</a>
-                    </div>
-                    <p>
-                        Quiz app I made using HTML, CSS, and JS. This app is for anyone who 
-                        wants to test their knowledge on animal trivia or learn some interesting facts about
-                        animals. I built this app to showcase my understanding of DOM manipulation as well as 
-                        applying jQuery.
-                    </p>
-                </div>
-                <div class="item">
-                    <h3>Shopping List App</h3>
-                    <div class="project-links">
-                        <a href="https://loonigooni.github.io/shopping-list-project/" class ="project-link" target="_blank">Working App</a> <a href="https://github.com/loonigooni/shopping-list-project" class ="project-link" target="_blank">Github Repo</a>
-                    </div>
-                    <p>
-                        Shopping list app I made using HTML, CSS, and JS. This app is for anyone who 
-                        wants to be able to add, remove, or cross off any items they input into the search bar. I 
-                        built this app as a fun project to learn JS and jQuery.
-                    </p>
-                </div>
-            </div>
-        </section>
-        <hr>
-        <section class="contact" id="contact">
-            <div class="group">
-                <div class="item">
-                    <h2 class="link-text">Links</h2>
-                    <ul class="contact-list">
-                        <li class="contact">
-                            <a href="tel:509-591-2295" class ="contact-link">
-                            <span class="contact-text">Call me here</span>
-                            </a>
-                        </li>
-                        <li class="contact">
-                            <a href="mailto:goonsinghpro@gmail.com" class ="contact-link">
-                            <span class="contact-text">Email Me Here</span>
-                            </a>
-                        </li>
-                        <li class="contact">
-                            <a href="https://github.com/loonigooni" class ="contact-link" target="_blank">
-                            <span class="contact-text">GitHub</span>
-                            </a>
-                        </li>
-                        <li class="contact">
-                            <a href="https://www.linkedin.com/in/loonigooni/" class ="contact-link" target="_blank">
-                            <span class="contact-text">Linkedin</span>
-                            </a>
-                        </li> 
-                    </ul>
-                </div>
-                <!--Contact Form with formspree-->
-                <div class="item">
-                    <form action="https://formspree.io/f/xqkgvawv" method="POST">
-                        <label for="user-name">Name:</label>
-                        <input id="user-name" type="text" name="name">
-              
-                        <label for="user-email">Email:</label>
-                        <input id="user-email" type="text" name="_replyto">
-              
-                        <label for="user-message">Message:</label>
-                        <textarea id="user-message" name="message"></textarea>
-                        <button type="submit" value="Send">Send</button>
-                      </form>
-                </div>
-            </div>
-        </section>
+  
+  <main>
+  
+      <!-- Introduction -->
+      <section>
+        <div class="group">
+          <div class="item">
+            <img src="images/Sokka-POG.png" alt="SokkaPOG" class="image-enhanced"> 
+          </div>
+          <div class="item">
+            <h1>Hey, I'm HARGUN..</h1>
+          </div>
+        </div>
+      </section>
+  
+      <!-- About me -->
+      <section class="dark-background">
+        <h2>..but you can call me GOON</h2>
+        <div class="group">
+          <div class="item item-double">
+            <p>I am a student attending Thinkful, enrolled in the Software Engineering Program. 
+              I originated in Seattle but my current position is Tri-Cities Washington. 
+              I have been thoroughly enjoying myself learning and growing my personal software developer arsenal. 
+              I still have much to learn but I look forward to the challenges that come my way.
+            </p>
+          </div>
+          <div class="item">
+  <img src="images/seattle-needle.jpg" alt="PicOfSeattleWa" class="image-enhanced"> 
+        </div>
+      </section>
+      
+  
+      <!-- Portfolio -->
+      <section>
+        <h2>Portfolio</h2>
+        <div class="group">
+          <div class="item">
+            <h3>Best Project</h3>
+            <p>This should showcase my best software engineering skills technically and creatively and should clearly show what I am capable of as a developer.</p>
+          </div>
+        </div>
+        <div class="group">
+          <div class="item">
+            <h3>Side Project 1</h3>
+            <p>I should have a few more projects that prioritize certain skillsets that are technically impressive or high in demand</p>
+          </div>
+          <div class="item">
+            <h3>Side Project 2</h3>
+            <p>This can just be a project I liked working on :)</p>
+          </div>
+        </div>
+      </section>
+  
+      <!-- Contact -->   
+      <section>
+        <h2>Contact</h2>
+        <div class="group">
+          <div class="item">
+          <form action="#" method="POST">
+            <label for="user-name">Name:</label>
+            <input id="user-name" type="text" name="name">
+  
+            <label for="user-email">Email:</label>
+            <input id="user-email" type="text" name="email">
+  
+            <label for="user-message">Message:</label>
+            <textarea id="user-message" name="message"></textarea>
+            <button type="submit">Submit</button>
+          </form>
+          </div>
+          <div class="item item-double">
+            <p>Phone #: <a href="tel:312-555-1256">(509) 591 2295</a></p>
+            <p>Email: <a href="mailto:hargunsv@gmail.com">hargunsv@gmail.com</a><p>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d86069.6028272642!2d-122.41210344429709!3d47.61300713488938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490102c93e83355%3A0x102565466944d59a!2sSeattle%2C%20WA!5e0!3m2!1sen!2sus!4v1646612804443!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> 
+          </div>
+        </div>
+      </section>
     </main>
-
-    <footer>
-        <p>Goon©</p>
-    </footer>
-</body>
-
-</html>
+  
+  <footer>
+    <p>© GOON</p>
+  </footer>
+  
