@@ -25,6 +25,19 @@ main {
   padding: 0 10px 0 0;
 }
 
+.logo a:hover {
+  color: linear-gradient(#ff00e0, #14ffe9, #ffeb3b);
+  animation: rotate 1.5s linear infinite;
+}
+@keyframes rotate {
+  0%{
+    filter: hue-rotate(0deg);
+  }
+  100%{
+    filter: hue-rotate(360deg)
+  }
+}
+
 header {
   background-image: url('/images/cartographer.png');
   margin: 0;
@@ -147,6 +160,18 @@ footer {
   background-color: rgb(32, 32, 32);
   margin: 0;
   padding: 0;
+}
+footer:hover {
+  color: linear-gradient(#ff00e0, #14ffe9, #ffeb3b);
+  animation: rotate 1.5s linear infinite;
+}
+@keyframes rotate {
+  0%{
+    filter: hue-rotate(0deg);
+  }
+  100%{
+    filter: hue-rotate(360deg)
+  }
 }
 
 /*Media Query for Desktop*/
