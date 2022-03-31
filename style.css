@@ -1,27 +1,46 @@
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
 body {
   font-size: 24px;
-  background: #272727;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background:#e0e6e9;
 }
+
+
 /*all text is currently white due to contract errors*/
+
 main {
-  color: #ffffff
+  color: rgb(32, 32, 32);
 }
-.logo {
-  text-align: center;
-}
+
 .logo a{
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: 50px;
-  color: #ffffff;
+  text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.5);
+  color: #e63232;
   text-decoration: none;
   padding: 0 10px 0 0;
 }
 
 header {
-  background-color: rgb(32, 32, 32);
-  margin: auto;
+  background-image: url('/images/cartographer.png');
+  margin: 0;
+  padding: 3rem;
 }
+
+header h1 {
+  margin: 0;
+}
+
+hr {
+  margin: 0 0 3rem 0;
+  height: 1px;
+  color: #f0d7bb;
+}
+
 /* Removed animated nav due to media query issues*/
 header nav {
   display: flex;
@@ -38,27 +57,38 @@ header nav ul li {
   list-style-type: none;
 }
 header nav ul li a {
-  color: #ffffff;
+  color: #e63232;
   text-decoration: none;
   padding: 0 10px 0 0;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+header nav ul li a:hover {
+  color: #0044ff;
+}
 img {
+  align-items: center;
   max-width: 200px;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 3rem 0;  
+  text-shadow: 1px 2px 2px rgba(32, 32, 32, 0.3);
+}
+ p {
+   color: rgb(32, 32, 32);
+ }
 section ul {
   margin: 20px;
 }
 
 section ul li {
-  color: white;
+  color: rgb(32, 32, 32);
   margin: 0px;
 }
 
 section ul li a {
   text-decoration: none;
-  color: #fff;
+  color: rgb(32, 32, 32);
 }
 
 .project-link {
@@ -66,11 +96,21 @@ section ul li a {
   flex-direction: row;
   justify-content: center;
   margin: 10px;
-  color: #ffffff;
+  color: #e63232;
+}
+.project-link:hover {
+  color: #0044ff;
 }
 .portfolio-text {
   font-size: 37px;
   margin: 10px;
+}
+.contact-link {
+  text-decoration: none;
+  color: #e63232;
+}
+.contact-link:hover {
+  color: #0044ff;
 }
 .group {
   display: flex;
@@ -79,9 +119,12 @@ section ul li a {
   
 .item {
   flex: 1;
-  margin: 10px;
+  margin: 0;
 }
 
+.contact-list {
+  list-style: none;
+}
 
 /*Contact Form Adjustments*/ 
 
@@ -100,8 +143,10 @@ form textarea {
 
 footer {
   text-align: center;
-  color:#ffffff;
+  color:#e63232;
   background-color: rgb(32, 32, 32);
+  margin: 0;
+  padding: 0;
 }
 
 /*Media Query for Desktop*/
@@ -111,8 +156,18 @@ footer {
     display: flex;
     justify-content: space-between;
   }
+  main {
+    padding: 0 3rem;
+  }
   section {
-    padding: 0% 7% 0% 7%;
+    padding: 0;
+  }
+  .item {
+    margin-right: 3rem;
+    text-align: justify;
+  }
+  .item:last-child {
+    margin: 0;
   }
   h3 {
     text-align: center;
@@ -135,3 +190,4 @@ footer {
   }
 
 }
+
